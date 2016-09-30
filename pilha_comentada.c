@@ -31,7 +31,7 @@ int main(){  //Função Main
 		if(op==2){ //expressão condicional -- if(condição) -- a condição nesse caso é a variavel op ser igual a 2, se a variável tiver como valor diferente de 2 o programa não "entra" no if e vai para o restante do código
 			if(pilha[0]==VAZIO){ //expressão condicional -- if(condição) -- a condição nesse caso é a variavel pilha na posição 0 (pois a variável pilha é um vetor,logo ela guarda mais de um valor) ter valor igual ao vazio. no Código isso vai ter função de informar ao usúario que a pilha está vazia e não será possivel retirar nenhum valor pois o valor não existe ainda no vetor, o usuário terá que inserir um valor para conseguir fazer a retirada
 				printf("Pilha Vazia!!\n"); //interage com o usuário escrevendo na tela "Pilha vazia!!" e quebrando uma linha logo após a exclamação
-			}
+			}//fechamento if
 			pilha[i]=VAZIO; //a pilha na posição i recebe o valor VAZIO
 			i--; //diminui 1 ao valor de 1 sempre que passar nessa linha (esse comando é o mesmo que o "i=i-1")
 			for(j=0;j<MAX;j++){ //estrutura de repetição for -- define j=0;condição do for(j ser menor que MAX); j recebe mais um*
